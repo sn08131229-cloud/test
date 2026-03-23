@@ -1,0 +1,4 @@
+build/
+*.exe
+sample_logs/test_run.log
+sample_logs/demo_output.txt
