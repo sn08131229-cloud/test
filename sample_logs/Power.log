@@ -1,0 +1,10 @@
+# Start the demo, then append lines like these one by one.
+# BATTLEGROUNDS_ENTER
+# PLAYER_HERO=Millificent Manastorm
+# TURN=1
+# PLAYER_HEALTH=40
+# PLAYER_TAVERN_TIER=1
+# OPPONENT_SEEN|opp_1|Patchwerk|38|Patchwerk
+# OPPONENT_BOARD|opp_1|Scallywag,Harvest Golem
+# TURN=2
+# PLAYER_TAVERN_TIER=2
