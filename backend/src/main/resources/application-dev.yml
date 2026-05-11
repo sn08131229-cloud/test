@@ -1,0 +1,13 @@
+server:
+  port: 8080
+spring:
+  datasource:
+    url: jdbc:mysql://localhost:3306/medical_device_trace
+    username: root
+    password: change_me
+chain:
+  enabled: true
+  mock: true
+  webaseFrontUrl: http://127.0.0.1:5002/WeBASE-Front
+  groupId: 1
+  contractAddress: 0x0000000000000000000000000000000000000000

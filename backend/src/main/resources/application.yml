@@ -1,0 +1,5 @@
+spring:
+  application:
+    name: medical-trace-backend
+  profiles:
+    active: dev
