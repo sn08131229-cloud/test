@@ -166,3 +166,32 @@ C:\Users\<用户名>\AppData\Local\Blizzard\Hearthstone\Logs\Power.log
 - 方便以后把“简化解析”替换成“真实日志解析”
 
 如果你愿意，下一步我可以继续帮你把 `Parser` 升级成“更接近真实 Power.log 的版本”，先从识别 **回合、英雄、玩家实体、血量标签、酒馆等级标签** 开始。
+
+
+## V1 医疗器械流转平台说明
+
+- 详见 `docs/运行说明.md`
+- SQL 初始化脚本：`docs/sql/init.sql`
+
+## 测试环境补充（你现在可直接执行）
+
+### 依赖
+
+- CMake >= 3.14
+- 支持 C++17 的编译器（g++/clang++/MSVC）
+
+### 构建与运行测试
+
+```bash
+mkdir -p build
+cd build
+cmake ..
+cmake --build .
+ctest --output-on-failure
+```
+
+已新增测试覆盖：
+
+- Parser 基础解析（TURN、OPPONENT_SEEN、OPPONENT_BOARD）
+- GameState 状态流转（进入/离开对局、回合、对手与棋盘更新）
+- LogTailer 增量读取新增日志行

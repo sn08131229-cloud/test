@@ -1,0 +1,2 @@
+<script setup>import {onMounted,ref} from 'vue';import http from '../api/http';const list=ref([]);const f=ref({deviceCode:'DEV-X',deviceName:'设备X',manufacturer:'M',supplierId:11,supplierName:'供应商甲',operator:'sup1'});const load=async()=>list.value=(await http.get('/devices')).data.data;const add=async()=>{await http.post('/devices',f.value);await load()};onMounted(load)</script>
+<template><div><h3>设备</h3><button @click='add'>新增演示设备</button><pre>{{list}}</pre></div></template>

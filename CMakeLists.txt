@@ -14,3 +14,16 @@ add_executable(BattlegroundsTrackerDemo
 )
 
 target_include_directories(BattlegroundsTrackerDemo PRIVATE include)
+
+
+enable_testing()
+
+add_executable(BattlegroundsTrackerDemoTests
+    tests/test_main.cpp
+    src/LogTailer.cpp
+    src/Parser.cpp
+    src/GameState.cpp
+)
+
+target_include_directories(BattlegroundsTrackerDemoTests PRIVATE include)
+add_test(NAME BattlegroundsTrackerDemoTests COMMAND BattlegroundsTrackerDemoTests)

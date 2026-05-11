@@ -1,0 +1,1 @@
+<template><div><h2>医疗器械流转平台V1</h2><nav><router-link to='/'>登录</router-link> | <router-link to='/dashboard'>仪表盘</router-link> | <router-link to='/devices'>设备</router-link> | <router-link to='/purchase'>采购</router-link> | <router-link to='/borrow'>借用</router-link> | <router-link to='/flows'>流转</router-link></nav><router-view/></div></template>
